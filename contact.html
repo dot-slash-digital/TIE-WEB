@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACT | TWOINDEPENDENTEYES</title>
+    <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="wrap">
+      <img
+        id="corner-graphic"
+        class="blend"
+        src="/assets/images/coming-soon-corner-graphic.webp"
+      />
+      <a href="/?nav=open">
+        <img id="logo" src="assets/images/logo-dark.webp" />
+      </a>
+
+      <form id="contact-form">
+        <p id="tagline">Fear no conversation. Say &#8220;hello.&#8221;</p>
+        <div class="field">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" />
+        </div>
+        <div class="field">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" />
+        </div>
+        <div class="field">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="field">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Submit Query</button>
+      </form>
+    </div>
+    <div id="attribution">2026 ©TWOINDEPENDENTEYES</div>
+    <script src="scripts/entrance-transition.js"></script>
+  </body>
+</html>

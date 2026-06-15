@@ -1,0 +1,64 @@
+#corner-graphic {
+  position: absolute;
+  inset: -10% auto auto -10%;
+  width: 30vw;
+  opacity: 0.3;
+}
+
+#tagline {
+  font-size: clamp(16px, 1.25vw, 20px);
+  color: #333;
+  margin-bottom: 2em;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+  z-index: 1;
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5em;
+  }
+
+  label {
+    font-style: italic;
+    font-size: clamp(14px, 1vw, 18px);
+    color: #444;
+    margin-bottom: 1.25em;
+  }
+
+  input,
+  textarea {
+    appearance: none;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #555;
+    outline: none;
+    font-family: inherit;
+    font-size: clamp(14px, 1vw, 18px);
+    color: #111;
+    padding: 0.25em 0;
+    resize: none;
+  }
+
+  textarea {
+    height: 3em;
+  }
+
+  button {
+    align-self: flex-end;
+    background: none;
+    border: 1.5px solid #334ca8;
+    color: #334ca8;
+    font-family: inherit;
+    font-size: clamp(14px, 1vw, 18px);
+    padding: 0.6em 2em;
+    cursor: pointer;
+    margin-top: 1em;
+  }
+}

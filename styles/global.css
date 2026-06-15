@@ -1,0 +1,61 @@
+:root {
+  --beige-bgr: rgb(185, 182, 167);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overscroll-behavior: none;
+}
+
+body {
+  margin: 0;
+  display: grid;
+  min-height: 100dvh;
+  background-color: var(--beige-bgr);
+  font-family: "IM Fell English";
+  color: #111;
+}
+
+img {
+  width: 100%;
+  -webkit-user-drag: none;
+}
+
+#logo {
+  max-width: 800px;
+  margin-bottom: 16px;
+}
+
+#wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 8vw;
+  background-color: var(--beige-bgr);
+  background-image: url("/assets/images/grid-background.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.blend {
+  mix-blend-mode: luminosity;
+  opacity: 0.65;
+}
+
+#attribution {
+  position: fixed;
+  z-index: 2;
+  inset: auto auto 8px 8px;
+  font-size: 14px;
+  color: #000;
+}
+
+@media (max-width: 767px) {
+  #wrap {
+    padding-inline: 20px;
+  }
+}

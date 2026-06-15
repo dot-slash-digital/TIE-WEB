@@ -1,0 +1,45 @@
+#center-column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  z-index: 1;
+  contain: layout;
+
+  a {
+    font-style: italic;
+    font-size: clamp(20px, 2.25vw, 26px);
+    color: #333;
+    text-decoration: none;
+  }
+}
+
+#eyes-graphic {
+  position: absolute;
+  inset: -75% 100% auto auto;
+  height: 225%;
+  width: auto;
+  pointer-events: none;
+  opacity: 0.45;
+}
+
+#person-graphic {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  contain: strict;
+
+  img {
+    position: absolute;
+    width: 70vw;
+    right: -10%;
+    bottom: -70%;
+  }
+}
+
+@media (max-width: 767px) {
+  #person-graphic img {
+    width: 90vw;
+    bottom: -15%;
+  }
+}

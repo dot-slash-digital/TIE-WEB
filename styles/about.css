@@ -1,0 +1,67 @@
+#wrap {
+  padding-top: 64px;
+}
+
+#home-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+}
+
+#eye-graphic {
+  margin-right: -6%;
+  width: 30%;
+}
+
+#logo {
+  width: 76%;
+  margin-bottom: 0;
+}
+
+#background-graphics {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  contain: strict;
+
+  #fig-26 {
+    position: absolute;
+    top: -15%;
+    left: -5%;
+    width: 25vw;
+    opacity: 0.4;
+  }
+
+  #fig-16 {
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
+    width: 40vw;
+    opacity: 0.4;
+  }
+}
+
+#about-paras {
+  margin-block: auto;
+  font-size: clamp(16px, 1.5vw, 20px);
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding-bottom: 5em;
+}
+
+@media (max-width: 767px) {
+  #background-graphics {
+    #fig-16 {
+      position: absolute;
+      bottom: -5%;
+      right: -5%;
+      width: 80vw;
+      opacity: 0.4;
+    }
+  }
+}

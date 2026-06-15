@@ -1,0 +1,13 @@
+#coming-soon {
+  margin-block: auto;
+  font-size: clamp(30px, 2vw, 40px);
+  color: #333;
+  padding-bottom: 6em;
+}
+
+#corner-graphic {
+  position: absolute;
+  inset: -10% auto auto -10%;
+  width: 30vw;
+  opacity: 0.3;
+}
