@@ -4,7 +4,9 @@ const NAVIGATION_WRAP = document.getElementById("navigation-wrap");
 
 const showNavigation = () => {
   NAVIGATION_WRAP.classList.add("show");
-  history.replaceState(null, "", window.location.pathname);
+  if (new URLSearchParams(window.location.search).get("nav") !== "open") {
+    history.replaceState(null, "", "?nav=open");
+  }
 };
 
 HOME_LOGO.addEventListener("click", showNavigation);
