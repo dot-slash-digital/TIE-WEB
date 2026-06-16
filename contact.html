@@ -27,7 +27,7 @@
         <img id="logo" src="assets/images/logo-dark.webp" alt="Two Independent Eyes" />
       </a>
 
-      <form id="contact-form">
+      <form id="contact-form" action="https://formspree.io/f/xqeojwen" method="POST">
         <p id="tagline">Fear no conversation. Say &#8220;hello.&#8221;</p>
         <div class="field">
           <label for="first-name">First Name</label>
@@ -45,10 +45,12 @@
           <label for="message">Message *</label>
           <textarea id="message" name="message" required></textarea>
         </div>
+        <p id="form-status" role="status" aria-live="polite"></p>
         <button type="submit">Submit Query</button>
       </form>
     </div>
     <div id="attribution">2026 ©TWOINDEPENDENTEYES</div>
     <script src="scripts/entrance-transition.js"></script>
+    <script src="scripts/contact.js" type="module"></script>
   </body>
 </html>

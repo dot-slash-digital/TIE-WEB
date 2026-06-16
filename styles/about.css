@@ -45,6 +45,8 @@
 }
 
 #about-paras {
+  position: relative;
+  z-index: 1;
   margin-block: auto;
   font-size: clamp(16px, 1.5vw, 20px);
   max-width: 640px;

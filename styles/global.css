@@ -34,7 +34,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32px 8vw;
+  padding: 32px 8vw 70px 8vw;
   background-color: var(--beige-bgr);
   background-image: url("/assets/images/grid-background.webp");
   background-size: cover;

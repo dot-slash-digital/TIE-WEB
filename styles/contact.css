@@ -22,7 +22,11 @@
   .field {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2.5em;
+    margin-bottom: 2em;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
   }
 
   label {
@@ -48,6 +52,21 @@
 
   textarea {
     height: 3em;
+  }
+
+  #form-status {
+    font-style: italic;
+    font-size: clamp(14px, 1vw, 18px);
+    min-height: 1.5em;
+    margin-bottom: 1em;
+
+    &.success {
+      color: #2c7a3f;
+    }
+
+    &.error {
+      color: #a83232;
+    }
   }
 
   button {
