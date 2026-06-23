@@ -8,29 +8,93 @@ export const ABOUT_PARAGRAPHS = [
   "• nurturing and amplifying the efforts of creatives and partners",
 ];
 
-//FILM AND TV EXTERNAL LINKS
-//Entries with no link ("") will automatically direct to the Coming Soon page.
+//FILM AND TV SECTIONS
+//Entries with no href ("") will automatically direct to the Coming Soon page.
 
-export const FILM_AND_TV_LINKS = [
-  ["Ages of Myst", "https://vimeo.com/853468306/d0d45d8e76?share=copy"],
-  ["And Then She Was Gone", "https://www.imdb.com/title/tt16225090"],
-  ["Big Girl Face", "https://www.imdb.com/title/tt36833824/"],
-  ["Cosmic Fling", "https://letterboxd.com/film/cosmic-fling/"],
-  ["Lane Change Warning", ""],
-  ["Load-In... On Tour With", ""],
-  ["Merry Good Enough", "https://www.imdb.com/title/tt23782540/"],
-  ["My Twin Is Dead", "https://www.imdb.com/title/tt11212894/"],
-  ["Popular Theory", "https://www.imdb.com/title/tt21956238/"],
-  // Pretty Little Head has the same href as Popular Theory on the Wix site
-  ["Pretty Little Head", "https://www.imdb.com/title/tt21956238/"],
-  [
-    "The Damning of a Country Merchant",
-    "https://www.imdb.com/title/tt12173164/",
-  ],
-  ["The Joke", ""],
-  ["Tongue of Opal", ""],
-  ["Unspeakable", "https://www.imdb.com/title/tt42206836"],
-  ["Vanished", ""],
-  ["Music Videos", ""],
-  ["Commercials", ""],
+export const FILM_AND_TV_SECTIONS = [
+  {
+    label: "Coming Soon",
+    entries: [
+      {
+        title: "Trust The Man",
+        type: "Feature",
+        genre: "Thriller",
+        logline: "An ambitious Army Intelligence officer during the Vietnam War is assigned to investigate a decorated soldier with a mysterious past.",
+        href: "https://www.imdb.com/title/tt35672854/",
+      },
+      {
+        title: "Unspeakable",
+        type: "Feature",
+        genre: "Horror",
+        logline: "A young mother struggles to connect with her newborn baby...while something else does.",
+        href: "https://www.imdb.com/title/tt42206836/",
+      },
+      {
+        title: "And Then She Was Gone",
+        type: "Feature",
+        genre: "Thriller",
+        logline: "An unlikely duo uncover a horrifying truth when they discover a child ominously living next door.",
+        href: "https://www.imdb.com/title/tt16225090/",
+      },
+      {
+        title: "NDA",
+        type: "Feature",
+        genre: "Drama",
+        logline: "A young professional must choose between taking a massive settlement and signing away her silence.",
+        href: "",
+      },
+    ],
+  },
+  {
+    label: "In Development",
+    entries: [
+      {
+        title: "Big Girl Face",
+        type: "Feature",
+        genre: "Crime-Comedy",
+        logline: "A desperate young woman kidnaps an arrogant neurosurgeon to save her mother's life.",
+        href: "https://www.imdb.com/title/tt36833824/",
+      },
+      {
+        title: "Vanished",
+        type: "Television",
+        genre: "Unscripted Competition",
+        logline: "Contestants must solve an otherworldly mystery while surviving the unexpected.",
+        href: "",
+      },
+      {
+        title: "The Damning of a Country Merchant",
+        type: "Feature",
+        genre: "Folk Horror",
+        logline: "In 1910 Indiana, evil seeps into the lives of a shopkeeper and his family while a visitor takes up residence in their home.",
+        href: "https://www.imdb.com/title/tt12173164/",
+      },
+    ],
+  },
+  {
+    label: "Released",
+    entries: [
+      {
+        title: "Popular Theory",
+        type: "Feature",
+        genre: "Family Comedy",
+        logline: "An 11-year-old genius discovers a chemical that can change her future.",
+        href: "https://www.imdb.com/title/tt21956238/",
+      },
+      {
+        title: "Merry Good Enough",
+        type: "Feature",
+        genre: "Comedy-Drama",
+        logline: "When her mother disappears during the holidays, estranged Lucy is forced to reunite her dysfunctional family.",
+        href: "https://www.imdb.com/title/tt23782540/",
+      },
+      {
+        title: "Cosmic Fling",
+        type: "Short",
+        genre: "Sci-Fi Romance",
+        logline: "An intergalactic garbage man faces extreme measures for love.",
+        href: "https://www.imdb.com/title/tt9393348/",
+      },
+    ],
+  },
 ];

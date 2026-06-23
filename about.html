@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ABOUT | TWOINDEPENDENTEYES</title>
+    <title>About | Two Independent Eyes</title>
     <meta
       name="description"
       content="Two Independent Eyes thrives on unique, impactful narrative storytelling. By challenging the expected, we aim to deliver moments rich with evocative power while carving spaces where stories are experienced in the most profound ways."
@@ -17,10 +17,19 @@
       href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <!-- Prefetch internal pages -->
+    <link rel="prefetch" href="index.html" />
+    <link rel="prefetch" href="about.html" />
+    <link rel="prefetch" href="film-and-tv.html" />
+    <link rel="prefetch" href="immersive.html" />
+    <link rel="prefetch" href="coming-soon.html" />
+    <link rel="prefetch" href="contact.html" />
   </head>
   <body>
-    <div id="wrap">
-      <a href="/?nav=open" id="home-link">
+    <div id="global-wrap">
+    <div id="subpage-wrap">
+      <div id="logo-wrap">
+      <a href="index.html?nav=open" id="home-link">
         <img
           id="eye-graphic"
           class="blend"
@@ -33,6 +42,8 @@
           alt="Two Independent Eyes"
         />
       </a>
+      <a id="back-button" href="index.html?nav=open">&#8592; Back</a>
+      </div>
 
       <div id="about-paras"></div>
     </div>
@@ -41,8 +52,10 @@
       <img id="fig-26" class="blend" src="assets/images/fig-26.webp" alt="" />
       <img id="fig-16" class="blend" src="assets/images/fig-16.webp" alt="" />
     </div>
-    <div id="attribution">2026 ©TWOINDEPENDENTEYES</div>
-    <script src="scripts/entrance-transition.js"></script>
+    <div id="attribution">2026 © TWO INDEPENDENT EYES</div>
+
+    <script src="scripts/eye-blink.js"></script>
     <script src="scripts/about.js" type="module"></script>
+    </div>
   </body>
 </html>

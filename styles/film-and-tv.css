@@ -1,45 +1,120 @@
-#center-column {
+#film-index {
+  width: 100%;
+  /* max-width: 900px; */
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   z-index: 1;
-  contain: layout;
 
-  a {
-    font-style: italic;
-    font-size: clamp(20px, 2.25vw, 26px);
-    color: #333;
-    text-decoration: none;
-  }
-}
-
-#eyes-graphic {
-  position: absolute;
-  inset: -75% 100% auto auto;
-  height: 225%;
-  width: auto;
-  pointer-events: none;
-  opacity: 0.45;
-}
-
-#person-graphic {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  contain: strict;
-
-  img {
+  &::before {
+    content: "";
     position: absolute;
-    width: 70vw;
-    right: -10%;
-    bottom: -70%;
+    inset: -32px;
+    background-color: #c8bfb8;
+    filter: blur(32px) opacity(0.9);
+    z-index: -1;
   }
+}
+
+.film-section {
+  margin-bottom: 3.5em;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-bottom: 0.6em;
+  border-bottom: 1px solid #111;
+  font-size: clamp(10px, 0.75vw, 12px);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #111;
+  font-style: normal;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 2em;
+  padding: 1.4em 0;
+  border-bottom: 1px solid #111;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  transition: opacity 0.2s ease;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 10px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    filter: blur(1px);
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 5%,
+      black 95%,
+      transparent
+    );
+  }
+
+  &::before {
+    bottom: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.45), transparent);
+  }
+
+  &::after {
+    top: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), transparent);
+  }
+}
+
+.film-section:has(.entry:hover) .entry:not(:hover) {
+  opacity: 0.3;
+}
+
+.entry:hover {
+  z-index: 1;
+
+  &::before,
+  &::after {
+    opacity: 1;
+  }
+}
+
+.entry-title {
+  font-size: clamp(18px, 1.8vw, 26px);
+  font-weight: normal;
+  font-style: normal;
+  margin: 0 0 0.3em;
+  letter-spacing: -0.01em;
+}
+
+.entry-type {
+  font-size: clamp(10px, 0.75vw, 12px);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #111;
+  font-style: normal;
+  margin: 0;
+}
+
+.entry-logline {
+  font-style: italic;
+  font-size: clamp(13px, 1vw, 16px);
+  color: #111;
+  margin: 0;
+  align-self: center;
+  line-height: 1.6;
 }
 
 @media (max-width: 767px) {
-  #person-graphic img {
-    width: 90vw;
-    bottom: -15%;
+  .entry {
+    grid-template-columns: 1fr;
+    gap: 0.75em;
   }
 }
