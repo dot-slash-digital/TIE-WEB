@@ -63,7 +63,7 @@ img {
   align-items: center;
   padding: 32px 8vw 70px 8vw;
   background-color: var(--beige-bgr);
-  background-image: url("/assets/images/grid-background.webp");
+  background-image: url("../assets/images/grid-background.webp");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

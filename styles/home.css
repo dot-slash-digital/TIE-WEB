@@ -32,7 +32,7 @@
 #navigation-wrap {
   z-index: 1;
   background-color: var(--beige-bgr);
-  background-image: url("/assets/images/grid-background.webp");
+  background-image: url("../assets/images/grid-background.webp");
   background-size: cover;
   background-position: center;
   padding: 32px 8vw;
