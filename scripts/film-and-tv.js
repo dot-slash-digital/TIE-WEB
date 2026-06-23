@@ -5,7 +5,7 @@ const FILM_INDEX = document.getElementById("film-index");
 const createEntry = ({ title, type, genre, logline, href }) => {
   const entry = Object.assign(document.createElement("a"), {
     className: "entry",
-    href: href || "coming-soon.html",
+    href: href || "coming-soon",
   });
   if (href) entry.target = "_blank";
 
