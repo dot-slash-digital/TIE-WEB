@@ -15,10 +15,10 @@ const BLINK_GRADIENT = Object.assign(document.createElement("div"), {
 BLINK_OVERLAY.append(BLINK_GRADIENT);
 document.body.prepend(BLINK_OVERLAY);
 
-// Open once page is fully loaded, respecting MIN_DELAY_MS
-window.addEventListener("load", () => {
+// Open once page is ready — pageshow fires on both normal loads and bfcache restores
+window.addEventListener("pageshow", (event) => {
   const elapsed = Date.now() - startTime;
-  const remaining = Math.max(0, MIN_DELAY_MS - elapsed);
+  const remaining = event.persisted ? 0 : Math.max(0, MIN_DELAY_MS - elapsed);
   setTimeout(
     () =>
       requestAnimationFrame(() => {
