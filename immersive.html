@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
     <!-- Prefetch internal pages -->
-    <link rel="prefetch" href="index.html" />
+    <link rel="prefetch" href="index" />
     <link rel="prefetch" href="about" />
     <link rel="prefetch" href="film-and-tv" />
     <link rel="prefetch" href="immersive" />
@@ -29,21 +29,25 @@
       <a href="index?nav=open">
         <img id="logo" src="assets/images/logo-dark.webp" alt="Two Independent Eyes" />
       </a>
-      <a id="back-button" href="index?nav=open">&#8592; Back</a>
+      <a id="back-button" href="index?nav=open"><img src="assets/images/back-arrow.webp" alt="" /> Back</a>
       </div>
 
-      <div id="center-row">
-        <a href="https://www.deathofrasputin.com/" target="_blank"
-          >I. The Death of Rasputin</a
-        >
-        <a href="coming-soon">II. The Hotel Pharmacy</a>
+      <div id="immersive-layout">
+        <img id="immersive-eye" class="blend" src="assets/images/eye-no-lines.webp" alt="" />
+        <div id="center-row">
+          <a href="https://www.deathofrasputin.com/" target="_blank"
+            >I. The Death of Rasputin</a
+          >
+          <a href="coming-soon">II. The Hotel Pharmacy</a>
+        </div>
       </div>
       <div id="person-graphic" class="blend">
         <img src="assets/images/film-and-tv-person.webp" alt="" />
       </div>
     </div>
-    <div id="attribution">2026 © TWO INDEPENDENT EYES</div>
+    <div id="attribution">2026 © two independent eyes</div>
     <script src="scripts/eye-blink.js"></script>
+    <script src="scripts/immersive.js"></script>
     </div>
   </body>
 </html>

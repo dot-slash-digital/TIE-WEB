@@ -1,4 +1,4 @@
-const TRANSITION_MS = 1000;
+const TRANSITION_MS = 750;
 const MIN_DELAY_MS = 500;
 const startTime = Date.now();
 

@@ -1,9 +1,21 @@
-#center-row {
+#immersive-layout {
   position: relative;
-  display: flex;
   z-index: 1;
   margin-block: auto;
   padding-bottom: 20%;
+}
+
+#immersive-eye {
+  position: absolute;
+  right: calc(100% + 40px);
+  top: 0;
+  width: clamp(120px, 12vw, 180px);
+  transform-origin: center;
+}
+
+#center-row {
+  display: flex;
+  flex-direction: column;
   gap: 48px;
 
   a {
@@ -29,10 +41,6 @@
 }
 
 @media (max-width: 767px) {
-  #center-row {
-    flex-direction: column;
-  }
-
   #person-graphic img {
     width: 90vw;
     bottom: -15%;

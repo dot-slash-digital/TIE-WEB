@@ -2,6 +2,11 @@ import { FILM_AND_TV_SECTIONS } from "../content.js";
 
 const FILM_INDEX = document.getElementById("film-index");
 
+const createLine = (position) =>
+  Object.assign(document.createElement("span"), {
+    className: `entry-line entry-line--${position}`,
+  });
+
 const createEntry = ({ title, type, genre, logline, href }) => {
   const entry = Object.assign(document.createElement("a"), {
     className: "entry",
@@ -23,11 +28,13 @@ const createEntry = ({ title, type, genre, logline, href }) => {
   );
 
   entry.append(
+    createLine("top"),
     meta,
     Object.assign(document.createElement("p"), {
       className: "entry-logline",
       textContent: logline,
     }),
+    createLine("bottom"),
   );
 
   return entry;
@@ -41,7 +48,6 @@ const createSection = ({ label, entries }) => {
   header.className = "section-header";
   header.append(
     Object.assign(document.createElement("span"), { textContent: label }),
-    Object.assign(document.createElement("span"), { textContent: "Logline" }),
   );
 
   section.append(header, ...entries.map(createEntry));
