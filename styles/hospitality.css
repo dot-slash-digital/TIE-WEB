@@ -1,6 +1,6 @@
 #coming-soon {
   margin-block: auto;
-  font-size: clamp(30px, 2vw, 40px);
+  font-size: clamp(20px, 1.5vw, 30px);
   color: #333;
   padding-bottom: 6em;
 }

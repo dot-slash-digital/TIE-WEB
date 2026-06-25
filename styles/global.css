@@ -17,7 +17,7 @@ body {
   display: grid;
   min-height: 100dvh;
   font-family: "IM Fell English";
-  color: #111;
+  color: #000;
 }
 
 img {
@@ -46,10 +46,6 @@ img {
   text-decoration: none;
   font-style: italic;
   font-size: clamp(18px, 1.5vw, 20px);
-
-  img {
-    width: 32px;
-  }
 }
 
 #global-wrap {
@@ -65,7 +61,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 32px 8vw 70px 8vw;
+  padding: 64px 8vw 70px 8vw;
   background-color: var(--beige-bgr);
   background-image: url("../assets/images/grid-background.webp");
   background-attachment: fixed;
@@ -116,6 +112,11 @@ img {
   pointer-events: none;
 
   &.open {
+    --blink-pos: 55%;
+  }
+
+  &.skip {
+    transition: none;
     --blink-pos: 55%;
   }
 

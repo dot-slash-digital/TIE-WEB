@@ -12,12 +12,11 @@
 }
 
 #eye-graphic {
-  margin-right: -6%;
-  width: 30%;
+  width: 25%;
 }
 
 #logo {
-  width: 76%;
+  width: 75%;
   margin-bottom: 0;
 }
 
@@ -52,8 +51,53 @@
   max-width: 640px;
   display: flex;
   flex-direction: column;
-  gap: 2em;
-  padding-bottom: 5em;
+  gap: 1.25em;
+  padding-bottom: 8em;
+}
+
+@keyframes dancers-wiggle {
+  0% {
+    transform: rotate(-10deg) scaleX(1);
+  }
+  12% {
+    transform: rotate(8deg) scaleX(1);
+  }
+  24% {
+    transform: rotate(-14deg) scaleX(-1);
+  }
+  36% {
+    transform: rotate(6deg) scaleX(-1);
+  }
+  48% {
+    transform: rotate(-8deg) scaleX(1);
+  }
+  60% {
+    transform: rotate(12deg) scaleX(1);
+  }
+  72% {
+    transform: rotate(-11deg) scaleX(-1);
+  }
+  84% {
+    transform: rotate(7deg) scaleX(-1);
+  }
+  96% {
+    transform: rotate(-9deg) scaleX(1);
+  }
+  100% {
+    transform: rotate(-10deg) scaleX(1);
+  }
+}
+
+#background-graphics {
+  #dancers {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 28vw;
+    opacity: 0.5;
+    transform-origin: bottom center;
+    animation: dancers-wiggle 4.5s steps(1) infinite;
+  }
 }
 
 @media (max-width: 767px) {

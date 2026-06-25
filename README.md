@@ -6,7 +6,7 @@ Both pages' dynamic content is controlled within content.js, which is located in
 
 ### ABOUT
 
-The About page's paragraph content can be edited using the ABOUT_PARAGRAPHS constant. Each comma-separated string is its own paragraph. Bulleted items use the "•" unicode character as a bullet.
+The About page's paragraph content can be edited using the ABOUT_PARAGRAPHS constant. Each comma-separated string is its own paragraph. Bulleted items use the "✘" unicode character as a bullet.
 
 ### FILM & TV
 

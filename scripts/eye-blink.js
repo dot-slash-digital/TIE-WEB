@@ -3,20 +3,24 @@ const MIN_DELAY_MS = 500;
 const startTime = Date.now();
 
 const GLOBAL_WRAP = document.getElementById("global-wrap");
+const BLINK_OVERLAY = document.getElementById("blink-overlay");
 
-const BLINK_OVERLAY = Object.assign(document.createElement("div"), {
-  id: "blink-overlay",
-});
+// On the bare landing (index without ?nav=open), skip the blink-in entirely
+const isIndex =
+  window.location.pathname.endsWith("/") ||
+  window.location.pathname.endsWith("index.html");
+const isLanding = isIndex && !new URLSearchParams(window.location.search).has("nav");
 
-const BLINK_GRADIENT = Object.assign(document.createElement("div"), {
-  id: "blink-gradient",
-});
-
-BLINK_OVERLAY.append(BLINK_GRADIENT);
-document.body.prepend(BLINK_OVERLAY);
+if (isLanding) {
+  BLINK_OVERLAY.classList.add("skip");
+}
 
 // Open once page is ready — pageshow fires on both normal loads and bfcache restores
 window.addEventListener("pageshow", (event) => {
+  if (isLanding) {
+    GLOBAL_WRAP.classList.add("visible");
+    return;
+  }
   const elapsed = Date.now() - startTime;
   const remaining = event.persisted ? 0 : Math.max(0, MIN_DELAY_MS - elapsed);
   setTimeout(
@@ -36,7 +40,7 @@ document.addEventListener("click", (event) => {
   if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
 
   event.preventDefault();
-  BLINK_OVERLAY.classList.remove("open");
+  BLINK_OVERLAY.classList.remove("open", "skip");
   setTimeout(() => {
     window.location.href = link.href;
   }, TRANSITION_MS);

@@ -35,7 +35,7 @@
   background-image: url("../assets/images/grid-background.webp");
   background-size: cover;
   background-position: center;
-  padding: 32px 8vw;
+  padding: 64px 8vw;
   flex-direction: column;
   opacity: 0;
   pointer-events: none;
@@ -47,6 +47,7 @@
 }
 
 nav {
+  contain: layout;
   margin-block: auto;
   display: flex;
   width: 100%;
@@ -61,19 +62,19 @@ nav {
   }
 
   #nav-column-1 {
-    margin-top: 14cqw;
+    margin-top: 13cqw;
     text-align: right;
 
     a {
-      margin-bottom: 12.25cqw;
+      margin-bottom: 10.5cqw;
     }
   }
 
   #nav-column-2 {
-    margin-top: 13.5cqw;
+    margin-top: 12cqw;
 
     a:first-child {
-      margin-bottom: 25cqw;
+      margin-bottom: 22.25cqw;
     }
   }
 
@@ -121,20 +122,20 @@ nav {
     margin-right: 0;
 
     #nav-column-1 {
-      margin-top: 10.5cqw;
+      margin-top: 8cqw;
       padding-right: 10px;
 
       a {
-        margin-bottom: 9cqw;
+        margin-bottom: 6.5cqw;
       }
     }
 
     #nav-column-2 {
-      margin-top: 10cqw;
+      margin-top: 7.5cqw;
       padding-left: 10px;
 
       a:first-child {
-        margin-bottom: 20.5cqw;
+        margin-bottom: 16cqw;
       }
     }
 
