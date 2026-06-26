@@ -1,3 +1,24 @@
+#subpage-wrap {
+  position: relative;
+}
+
+#fig-left,
+#fig-right {
+  position: absolute;
+  top: 0;
+  width: 20vw;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+#fig-left {
+  left: 0;
+}
+
+#fig-right {
+  right: 0;
+}
+
 #back-button {
   margin-top: 3em;
   position: relative;
@@ -15,7 +36,7 @@
     content: "";
     position: absolute;
     inset: -32px;
-    background-color: #c8bfb8;
+    background-color: #c4beae;
     filter: blur(32px) opacity(0.9);
     z-index: -1;
   }
@@ -27,8 +48,10 @@
   &:not(:last-child)::after {
     content: "";
     display: block;
-    height: 0;
-    border-top: 4px dotted #111;
+    height: 2.5px;
+    background-image: url("../assets/images/dotted-line.webp");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
     margin-block: 4em;
   }
 }

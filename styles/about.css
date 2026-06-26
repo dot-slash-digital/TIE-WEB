@@ -96,7 +96,7 @@
     width: 28vw;
     opacity: 0.5;
     transform-origin: bottom center;
-    animation: dancers-wiggle 4.5s steps(1) infinite;
+    /* animation: dancers-wiggle 4.5s steps(1) infinite; */
   }
 }
 

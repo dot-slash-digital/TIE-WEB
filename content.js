@@ -1,11 +1,10 @@
 //ABOUT PAGE PARAGRAPHS
-//Bulleted entries use the "✘" unicode character
 
 export const ABOUT_PARAGRAPHS = [
   "Two Independent Eyes thrives on unique, impactful narrative storytelling. By challenging the expected, we aim to deliver moments rich with evocative power while carving spaces where stories are experienced in the most profound ways. Blending formats and mediums, we focus on three pursuits:",
-  "✘ crafting experiences that are timeless and communal, fostering engagement",
-  "✘ strategically bringing the strongest ideas to market in a crowded world",
-  "✘ nurturing and amplifying the efforts of creatives and partners",
+  "I. Crafting experiences that are timeless and communal, fostering engagement",
+  "II. Strategically bringing the strongest ideas to market in a crowded world",
+  "III. Nurturing and amplifying the efforts of creatives and partners",
 ];
 
 //FILM AND TV SECTIONS

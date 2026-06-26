@@ -32,8 +32,8 @@
 #navigation-wrap {
   z-index: 1;
   background-color: var(--beige-bgr);
-  background-image: url("../assets/images/grid-background.webp");
-  background-size: cover;
+  background-image: url("../assets/images/seamless-gridpaper.webp");
+  background-size: 1080px;
   background-position: center;
   padding: 64px 8vw;
   flex-direction: column;
