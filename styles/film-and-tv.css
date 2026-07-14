@@ -168,9 +168,25 @@
   line-height: 1.6;
 }
 
+@media (max-width: 1032px) {
+  #fig-left,
+  #fig-right {
+    top: auto;
+    bottom: 0;
+  }
+}
+
 @media (max-width: 767px) {
   .entry {
     grid-template-columns: 1fr;
     gap: 0.75em;
+  }
+
+  .section-header {
+    font-size: clamp(18px, 4.5vw, 22px);
+  }
+
+  .entry-title {
+    font-size: clamp(24px, 6vw, 30px);
   }
 }

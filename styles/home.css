@@ -120,33 +120,38 @@ nav {
 
   nav {
     margin-right: 0;
+    flex-direction: column;
+    gap: 0.6em;
 
-    #nav-column-1 {
-      margin-top: 8cqw;
-      padding-right: 10px;
+    #nav-column-1,
+    #nav-column-2 {
+      margin-top: 0;
+      padding: 0;
+      text-align: center;
+      gap: 0.6em;
 
       a {
-        margin-bottom: 6.5cqw;
+        margin-bottom: 0;
       }
     }
 
-    #nav-column-2 {
-      margin-top: 7.5cqw;
-      padding-left: 10px;
-
-      a:first-child {
-        margin-bottom: 16cqw;
-      }
+    #nav-column-2 a:first-child {
+      margin-bottom: 0;
     }
 
     a {
-      font-size: 3.5cqw;
+      font-size: clamp(20px, 3.5vw, 26px);
     }
   }
 
   #head-mobile {
     display: block;
+    order: -1;
+    width: 65vw;
+    align-self: center;
+    margin-bottom: 1em;
   }
+
   #head-desktop-wrap {
     display: none;
   }

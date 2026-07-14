@@ -41,10 +41,10 @@ export const FILM_AND_TV_SECTIONS = [
       {
         title: "NDA",
         type: "Feature",
-        genre: "Drama",
+        genre: "Thriller",
         logline:
           "A young professional must choose between taking a massive settlement and signing away her silence.",
-        href: "",
+        href: "https://www.imdb.com/title/tt43655470/",
       },
     ],
   },
