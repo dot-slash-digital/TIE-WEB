@@ -54,7 +54,7 @@
 html,
 body {
   overscroll-behavior: none;
-  background-color: red;
+  background-color: #000;
 }
 
 body {
@@ -62,7 +62,7 @@ body {
   display: grid;
   min-height: 100dvh;
   font-family: "IM Fell English";
-  color: red;
+  color: #000;
 }
 
 img {
