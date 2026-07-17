@@ -1,0 +1,49 @@
+#logo-wrap {
+  margin-bottom: 64px;
+}
+
+#subpage-wrap {
+  padding-bottom: 128px;
+}
+
+#bio-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 4em;
+  width: 100%;
+  max-width: 900px;
+  position: relative;
+  z-index: 1;
+}
+
+#bio-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+#bio-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25em;
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: 1.65;
+
+  p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  #bio-layout {
+    grid-template-columns: 1fr;
+    gap: 2em;
+  }
+
+  #bio-image-col {
+    max-width: 60vw;
+  }
+
+  #bio-text {
+    font-size: clamp(18px, 4.5vw, 22px);
+  }
+}

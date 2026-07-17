@@ -10,7 +10,7 @@
   --offset-percentage: max(20vw, 20vw);
   z-index: 1000000;
   contain: strict;
-  will-change: transform;
+  /* will-change: transform; */
   position: fixed;
   transform: translate3d(0, 0, 0);
   left: calc(var(--offset-percentage) * -1);
@@ -61,6 +61,7 @@ body {
   margin: 0;
   display: grid;
   min-height: 100dvh;
+  height: 100%;
   font-family: "IM Fell English";
   color: #000;
 }

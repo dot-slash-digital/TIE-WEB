@@ -27,10 +27,10 @@ window.addEventListener("pageshow", (event) => {
   setTimeout(
     () =>
       requestAnimationFrame(() => {
-        GLOBAL_WRAP.classList.add("visible");
-        requestAnimationFrame(() =>
-          requestAnimationFrame(() => BLINK_OVERLAY.classList.add("open")),
-        );
+        BLINK_OVERLAY.classList.add("open");
+        requestAnimationFrame(() => {
+          GLOBAL_WRAP.classList.add("visible");
+        });
       }),
     remaining,
   );
@@ -45,6 +45,11 @@ document.addEventListener("click", (event) => {
   event.preventDefault();
   BLINK_OVERLAY.classList.remove("open", "skip");
   setTimeout(() => {
-    window.location.href = link.href;
+    GLOBAL_WRAP.style.opacity = "0";
+    requestAnimationFrame(() =>
+      requestAnimationFrame(() => {
+        window.location.href = link.href;
+      }),
+    );
   }, TRANSITION_MS);
 });

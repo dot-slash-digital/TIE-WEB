@@ -27,6 +27,7 @@
   max-width: 1000px;
   cursor: pointer;
   z-index: 1;
+  filter: invert();
 }
 
 #navigation-wrap {
