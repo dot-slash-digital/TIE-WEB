@@ -8,7 +8,7 @@
 
 #bio-layout {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1.5fr 2fr;
   gap: 4em;
   width: 100%;
   max-width: 900px;
@@ -40,7 +40,7 @@
   }
 
   #bio-image-col {
-    max-width: 60vw;
+    max-width: 100%;
   }
 
   #bio-text {

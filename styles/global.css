@@ -110,7 +110,7 @@ img {
   padding: 64px 8vw 70px 8vw;
   overflow: hidden;
   background-color: var(--beige-bgr);
-  background-image: url("../assets/images/grid-background.webp");
+  background-image: url("../assets/images/grid-background-semi-transparent.webp");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -127,7 +127,7 @@ img {
 }
 
 #attribution {
-  position: fixed;
+  position: absolute;
   z-index: 2;
   inset: auto auto 8px 8px;
   font-size: 14px;

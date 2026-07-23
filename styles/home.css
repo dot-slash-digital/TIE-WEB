@@ -27,13 +27,12 @@
   max-width: 1000px;
   cursor: pointer;
   z-index: 1;
-  filter: invert();
 }
 
 #navigation-wrap {
   z-index: 1;
   background-color: var(--beige-bgr);
-  background-image: url("../assets/images/grid-background.webp");
+  background-image: url("../assets/images/grid-background-semi-transparent.webp");
   background-size: cover;
   background-position: center;
   padding: 64px 8vw;
