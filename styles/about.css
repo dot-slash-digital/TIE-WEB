@@ -132,5 +132,9 @@
       width: 80vw;
       opacity: 0.4;
     }
+
+    #dancers {
+      bottom: -7%;
+    }
   }
 }

@@ -29,6 +29,7 @@ window.addEventListener("pageshow", (event) => {
       requestAnimationFrame(() => {
         BLINK_OVERLAY.classList.add("open");
         requestAnimationFrame(() => {
+          GLOBAL_WRAP.style.opacity = "";
           GLOBAL_WRAP.classList.add("visible");
         });
       }),
