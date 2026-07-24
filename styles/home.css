@@ -116,6 +116,7 @@ nav {
 @media (max-width: 767px) {
   #navigation-wrap {
     padding-inline: 20px;
+    padding-top: 40px;
   }
 
   nav {

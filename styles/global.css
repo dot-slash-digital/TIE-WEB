@@ -138,5 +138,6 @@ img {
 @media (max-width: 767px) {
   #subpage-wrap {
     padding-inline: 20px;
+    padding-top: 40px;
   }
 }

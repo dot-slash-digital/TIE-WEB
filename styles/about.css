@@ -134,7 +134,7 @@
     }
 
     #dancers {
-      bottom: -7%;
+      display: none;
     }
   }
 }
