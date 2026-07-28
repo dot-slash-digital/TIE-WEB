@@ -46,4 +46,11 @@
   #bio-text {
     font-size: clamp(18px, 4.5vw, 22px);
   }
+
+  #logo-wrap {
+    margin-bottom: 40px;
+  }
+  #logo {
+    margin-bottom: 0;
+  }
 }
