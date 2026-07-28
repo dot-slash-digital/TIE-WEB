@@ -49,6 +49,10 @@
 
   #logo-wrap {
     margin-bottom: 40px;
+
+    a {
+      display: flex;
+    }
   }
   #logo {
     margin-bottom: 0;
